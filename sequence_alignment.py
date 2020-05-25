@@ -47,6 +47,15 @@ def sequence_alignment(X, Y, m, n, d, a):
 				)
 	return M[n][m]
 
-# cost function for substitiution
+# cost function for substitution
 def cost_a(x, y, a):
 	return 0 if (x==y) else a
+
+# time: O(m*n)
+# space: O(m*n)
+# note: it is possible to reduce space to O(m+n) since we only need the previous row and column
+# in that case, recovering the actual operations for alignment becomes nontrivial. let's think about it later
+
+
+
+
